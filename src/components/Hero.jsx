@@ -70,9 +70,9 @@ const Hero = () => {
  
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center'>
           <a href="#about">
-            <div className='w-[35px] h-[64px] rounded-3xl border-4 border-customOrange-100 flex justify-center items-center p-1 '>
+            <div className='w-[35px] h-[74px] rounded-3xl border-4 border-customOrange-100 flex justify-center items-center p-1 '>
               <motion.div 
-                className =" w-full h-5 mb-1"
+                className =" w-full h-5 mb-1 "
                   animate={{
                     y: [0,24,0]
                   }}

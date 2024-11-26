@@ -36,8 +36,14 @@ import drs from "./drs.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import vrgame from "./vrgame.png";
+import hotelbook from "./hotelbook.png";
+import faceattend from "./faceattendance.png";
 
 export {
+  vrgame,
+  hotelbook,
+  faceattend,
   drs,
   logo,
   backend,

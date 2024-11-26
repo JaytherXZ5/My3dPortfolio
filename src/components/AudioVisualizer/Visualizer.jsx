@@ -6,7 +6,7 @@ import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass';
 import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 import {OutputPass} from 'three/examples/jsm/postprocessing/OutputPass';
 import { Volume2 } from 'lucide-react';
-
+import audiointro from "../../assets/introduction.mp3";
 export function PlayVisualizer(){
   
 }
@@ -20,6 +20,7 @@ const AudioVisualizer = () => {
   useEffect(()=>{
     
     //3d object
+
     const container = containerRef.current; // Access the container
     if (!container) return;
   
@@ -213,7 +214,7 @@ const AudioVisualizer = () => {
 
     const audioLoader = new THREE.AudioLoader();
    
-    audioLoader.load("./src/assets/introduction.mp3", function(buffer) {
+    audioLoader.load(audiointro, function(buffer) {
       sound.setBuffer(buffer);
       
       sound.onEnded = () => {
@@ -266,6 +267,8 @@ const AudioVisualizer = () => {
       mouseX = (e.clientX - containerHalfX) / 50;
       mouseY = (e.clientY - containerHalfY) / 50;
     });
+
+    
 
     const clock = new THREE.Clock();
     function animate() {

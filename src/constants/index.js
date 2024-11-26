@@ -1,5 +1,8 @@
 import {
-    mobile,
+    faceattend,
+    hotelbook,
+    vrgame,
+    drs,
     backend,
     gamedeveloper,
     reactnative,
@@ -9,21 +12,14 @@ import {
     java,
     nextjs,
     vuejs,
-    blender,
     laravel,
     web,
     javascript,
     typescript,
-    html,
-    css,
     reactjs,
     tailwind,
     nodejs,
-    mongodb,
-    git,
     figma,
-    docker,
-    meta,
     carrent,
     jobit,
     tripguide,
@@ -37,8 +33,12 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "experience",
+      title: "Experience",
+    },
+    {
+      id:"projects",
+      title:"Projects",
     },
     {
       id: "contact",
@@ -66,56 +66,14 @@ import {
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+
     {
       name: "React JS",
       icon: reactjs,
     },
-
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-
     {
       name: "laravel",
       icon: laravel
-    },
-
-    {
-      name: "cplusplus",
-      icon: cplusplus,
-    },
-    {
-      name: "java",
-      icon: java,
     },
     {
       name: "nextjs",
@@ -146,7 +104,7 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-
+    
   ];
   
   const testimonials = [
@@ -178,30 +136,30 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Document Repository System",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Document repository system designed for file management within a college setting. The system allows users to upload documents and categorize them by department, whether for teaching or administrative purposes. It also accredits the documents to specific areas within each department, making it easy to organize and retrieve files.",
       tags: [
         {
-          name: "react",
+          name: "Vue.JS",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "MySQL",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: drs,
+      source_code_link: "https://github.com/JaytherXZ5/drs_mmsu-Document-Repository-MMSUSystem-",
     },
     {
-      name: "Job IT",
+      name: "Ilocos Norte Hotel Booking",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Hotel Booking Web Application is designed to facilitate seamless and efficient hotel booking services across Ilocos Norte. It serves as a centralized platform that connects travelers with hotels, ensuring a convenient and reliable booking experience.",
       tags: [
         {
           name: "react",
@@ -212,33 +170,47 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: hotelbook,
+      source_code_link: "https://github.com/JaytherXZ5/IlocosNorteHotelBooking",
     },
     {
-      name: "Trip Guide",
+      name: "MMSU VR CHRONICLES",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "MMSU VR Chronicles is an immersive Virtual Reality game that brings Mariano Marcos State University's history to life. The game takes players through the university's milestones, interactive gameplay, and detailed 3D environments.",
+      tags: [
+        {
+          name: "unrealengine",
+          color: "blue-text-gradient",
+        },
+
+      ],
+      image: vrgame ,
+      source_code_link: "https://github.com/JaytherXZ5/MMSU-VR-CHRONICLES",
+    },
+    {
+      name: "Face Recognition System",
+      description:
+        "A Face Recognition Attendance System developed in Python Tkinter utilizing OpenCV libraries, programmed to detect and recognize faces from camera feed, creating a CSV file spreadsheet to save attendance.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "csv",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tkinter",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: faceattend ,
+      source_code_link: "https://github.com/JaytherXZ5/FaceRecognitionAttendance",
     },
   ];
   
