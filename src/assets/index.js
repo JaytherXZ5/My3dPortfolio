@@ -40,7 +40,13 @@ import vrgame from "./vrgame.png";
 import hotelbook from "./hotelbook.png";
 import faceattend from "./faceattendance.png";
 
+import linkedin from "./linkedin.png";
+import gmail from "./gmail.png";
+import facebook from "./facebook.png"
 export {
+  gmail,
+  linkedin,
+  facebook,
   vrgame,
   hotelbook,
   faceattend,

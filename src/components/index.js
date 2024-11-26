@@ -8,6 +8,7 @@ import Works from './Projects';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 
+
 export {
   Hero,
   Navbar,
@@ -20,5 +21,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+
 }

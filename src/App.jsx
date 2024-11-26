@@ -6,7 +6,7 @@ import {About,
   Hero, 
   Navbar, 
   Tech, 
-  Works, 
+  Works,
   StarsCanvas} from './components';
 
 const App = () => {

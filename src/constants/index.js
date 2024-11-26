@@ -1,4 +1,8 @@
 import {
+    linkedin,
+    facebook,
+    gmail,
+    github,
     faceattend,
     hotelbook,
     vrgame,
@@ -86,6 +90,10 @@ import {
     {
       name: "python",
       icon: python
+    },
+    {
+      name: "threejs",
+      icon: threejs
     }
 
   ];
@@ -101,11 +109,30 @@ import {
         "Developing and maintaining web applications using Vue.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participating in code reviews and providing feedback to other developers.",
       ],
     },
     
   ];
+
+  const socials = [
+    {
+      name: "gmail",
+      icon: gmail,
+    },
+    {
+      name: "facebook",
+      icon: facebook,
+    },
+    {
+      name: "github",
+      icon: github,
+    },
+    {
+      name: "linkedin",
+      icon: linkedin,
+    },
+  ]
   
   const testimonials = [
     {

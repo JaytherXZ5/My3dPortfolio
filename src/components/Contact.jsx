@@ -9,7 +9,7 @@ import {styles} from '../styles';
 import {EarthCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import {slideIn} from '../utils/motion';
-
+import { Linkedin, Mail, Phone, Facebook, Instagram, Github } from 'lucide-react';
 
 const Contact = () => {
   const formRef = useRef();
@@ -130,7 +130,44 @@ const Contact = () => {
                   {loading ? 'Sending...': 'Send'}
                 </button>      
                 </div>
-              
+
+                <div className="flex flex-col gap-4 justify-start">
+                  
+                  <div className={`${styles.sectionSubText2}  `}>
+                      <span className='text-customOrange-100'>Socials</span>
+                      <div className="flex flex-row gap-6 justify-start mt-1">
+                        <a href="https://web.facebook.com/JaytherXZ52">
+                          <Facebook size={40} className='border p-1 rounded-lg'/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jayther-jann-bua-ay-6b6a82233/">
+                          <Linkedin size={40} className='border p-1 rounded-lg'/>
+                        </a>
+                        <a href="https://github.com/JaytherXZ5">
+                          <Github size={40} className='border p-1 rounded-lg'/>
+                        </a>
+                      </div>
+                  </div>
+                  
+
+                  <div className={`${styles.sectionSubText2} flex flex-col`}>
+                    <div className="flex flex-row">
+                      <span className='text-customOrange-100'>Email</span>
+                      <Mail className='p-1' />
+                    </div>
+                    <span>jaytherjanbuaay2.0@gmail.com</span>
+                  </div>
+
+
+                  <div className={`${styles.sectionSubText2} flex flex-col `}>
+                    <div className="flex flex-row">
+                      <span className='text-customOrange-100'>Phone</span>
+                      <Phone className='p-1' />
+                    </div>
+                    <span>(+63) 9289940716</span>
+                  </div>
+                </div>
+
+
               </form>
       </motion.div>
 
