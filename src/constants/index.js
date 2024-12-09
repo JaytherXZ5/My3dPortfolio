@@ -91,10 +91,7 @@ import {
       name: "python",
       icon: python
     },
-    {
-      name: "threejs",
-      icon: threejs
-    }
+
 
   ];
   

@@ -46,7 +46,7 @@ const About = () => {
         variants={fadeIn("", "",0.1,1)}
         className='mt-4 text-secondary text-[17px]'
       >
-      I a recent graduate from Mariano Marcos State University, aspiring professional software developer.
+      I'm a recent graduate from Mariano Marcos State University, aspiring professional software developer.
       I have a a strong foundation in TypeScript and JavaScript, specializing 
       in modern frameworks like React, Node.js, Next.js, and 
       Three.js. I thrive on learning quickly and collaborating 

@@ -13,7 +13,7 @@ const ProjectCard =({index, name, description,
 
     useEffect(()=>{
       //lets add a listener for changes to the screen size
-      const mediaQuery = window.matchMedia('(max-width: 700px)')
+      const mediaQuery = window.matchMedia('(max-width: 500px)')
   
       //Set initial value of the isMobile state variable
       setIsMobile(mediaQuery.matches);
@@ -32,76 +32,73 @@ const ProjectCard =({index, name, description,
       }
     },[])
     return (
-      <>
-      {!isMobile?
-              <motion.div className=''
-                variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-                  <Tilt options={{ max: 45, scale: 1, speed:450 }}
-                    className="bg-tertiary p-4 rounded-2xl sm:w-[360px] w-full">
-        
-                      <div className="transform transition py-4 duration-300  hover:scale-125 relative w-full h-[230px]">
-                        <img src={image}
-                             alt={name}
-                             className='w-full h-full object-fit 
-                             rounded-md shadow-sm shadow-white' />
-                        
-                        <div className="absolute inset-0 flex 
-                          justify-end m-3 card-img_hover">
-                            <div onClick={()=> window.open(source_code_link,"_blank")}
-                              className='black-gradient w-10 mt-2 h-10 rounded-full
-                              flex justify-center items-center cursor-pointer'>
-                              
-                              <img src={github} 
-                                   alt="github" 
-                                   className='w-1/2 h-1/2 object-contain'/>
-                            </div>
+            
+          <motion.div className=''
+            variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+              {isMobile?
+              <div 
+                className="bg-tertiary p-4 rounded-2xl sm:w-[360px] w-full">
+    
+                  <div className="transform transition py-4 duration-300  hover:scale-125 relative w-full h-[230px]">
+                    <img src={image}
+                          alt={name}
+                          className='w-full h-full object-fit 
+                          rounded-md shadow-sm shadow-white' />
+                    
+                    <div className="absolute inset-0 flex 
+                      justify-end m-3 card-img_hover">
+                        <div onClick={()=> window.open(source_code_link,"_blank")}
+                          className='black-gradient w-10 mt-2 h-10 rounded-full
+                          flex justify-center items-center cursor-pointer'>
+                          
+                          <img src={github} 
+                                alt="github" 
+                                className='w-1/2 h-1/2 object-contain'/>
                         </div>
-                      </div>
-        
-                  {/**Project Descriptions */}
-                      <div className='mt-5'>
-                        <h3 className="text-white font-bold 
-                          text-[24px]">{name}
-                        </h3>
-                        <p className='mt-2 text-secondary text-14px'>{description}</p>
-                      </div>
-        
-                  </Tilt>
-              </motion.div> 
-              :
-           <div
-            className="bg-tertiary p-4 rounded-2xl sm:w-[360px] w-full">
-
-              <div className="transform transition py-4 duration-300  hover:scale-125 relative w-full h-[230px]">
-                <img src={image}
-                     alt={name}
-                     className='w-full h-full object-fit 
-                     rounded-md shadow-sm shadow-white' />
-                
-                <div className="absolute inset-0 flex 
-                  justify-end m-3 card-img_hover">
-                    <div onClick={()=> window.open(source_code_link,"_blank")}
-                      className='black-gradient w-10 mt-2 h-10 rounded-full
-                      flex justify-center items-center cursor-pointer'>
-                      
-                      <img src={github} 
-                           alt="github" 
-                           className='w-1/2 h-1/2 object-contain'/>
                     </div>
+                  </div>
+    
+              {/**Project Descriptions */}
+                  <div className='mt-5'>
+                    <h3 className="text-white font-bold 
+                      text-[24px]">{name}
+                    </h3>
+                    <p className='mt-2 text-secondary text-14px'>{description}</p>
+                  </div>
+              </div>
+              :<Tilt options={{ max: 40, scale: 1, speed:400 }}
+              className="bg-tertiary p-4 rounded-2xl sm:w-[360px] w-full">
+  
+                <div className="transform transition py-4 duration-300  hover:scale-125 relative w-full h-[230px]">
+                  <img src={image}
+                        alt={name}
+                        className='w-full h-full object-fit 
+                        rounded-md shadow-sm shadow-white' />
+                  
+                  <div className="absolute inset-0 flex 
+                    justify-end m-3 card-img_hover">
+                      <div onClick={()=> window.open(source_code_link,"_blank")}
+                        className='black-gradient w-10 mt-2 h-10 rounded-full
+                        flex justify-center items-center cursor-pointer'>
+                        
+                        <img src={github} 
+                              alt="github" 
+                              className='w-1/2 h-1/2 object-contain'/>
+                      </div>
+                  </div>
                 </div>
-              </div>
-
-          {/**Project Descriptions */}
-              <div className='mt-5'>
-                <h3 className="text-white font-bold 
-                  text-[24px]">{name}
-                </h3>
-                <p className='mt-2 text-secondary text-14px'>{description}</p>
-              </div>
-
-          </div>
-  }
-      </>
+  
+            {/**Project Descriptions */}
+                <div className='mt-5'>
+                  <h3 className="text-white font-bold 
+                    text-[24px]">{name}
+                  </h3>
+                  <p className='mt-2 text-secondary text-14px'>{description}</p>
+                </div>
+            </Tilt>
+              }
+          </motion.div> 
+             
 
     )
 }
